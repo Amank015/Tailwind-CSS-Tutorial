@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                'sm': '567px',
+                // => @media (min-width: 640px) { ... }
+          
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+          
+                'lg': '1024px',
+                // => @media (min-width: 1024px) { ... }
+          
+                'xl': '1280px',
+                // => @media (min-width: 1280px) { ... }
+          
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+              },
+
+            extend: {
+                screens: {    //adding new screens
+                    
+                    'xs': {min:'320px',max:'567px'},
+                    // => @media (min-width: 992px) { ... }
+                  },
+              colors: {
+                colors: {
+                    transparent: 'transparent',
+                    current: 'currentColor',
+                    'white': '#ffffff',
+                    'purple': '#3f3cbb',
+                    'midnight': '#121063',
+                    'metal': '#565584',
+                    'tahiti': '#3ab7bf',
+                    'silver': '#ecebff',
+                    'bubble-gum': '#ff77e9',
+                    'bermuda': '#78dcca',
+                  },
+              },
+            },
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="max-w-[1200px] py-5 text-white mx-auto grid text-center
+     lg:grid-cols-4 md:grid-cols-2 gap-5 ">
+        <div class="bg-[green] sm:col-span-2 max-w-[1200px]">You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:grid-cols-6 to apply the grid-cols-6 utility at only medium screen sizes and above.</div>
+        <div class="bg-[green]">You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:grid-cols-6 to apply the grid-cols-6 utility at only medium screen sizes and above.</div>
+        <div class="bg-[green]">You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:grid-cols-6 to apply the grid-cols-6 utility at only medium screen sizes and above.</div>
+        <div class="bg-[green]">>You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:grid-cols-6 to apply the grid-cols-6 utility at only medium screen sizes and above.</div>
+        <div class="bg-[green]">You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:grid-cols-6 to apply the grid-cols-6 utility at only medium screen sizes and above.</div>
+        <div class="bg-[green]">You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:grid-cols-6 to apply the grid-cols-6 utility at only medium screen sizes and above.</div>
+        <div class="bg-[green]">You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:grid-cols-6 to apply the grid-cols-6 utility at only medium screen sizes and above.</div>
+        <div class="bg-[green]">You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:grid-cols-6 to apply the grid-cols-6 utility at only medium screen sizes and above.</div>
+
+    </div>
+</body>
+</html>
